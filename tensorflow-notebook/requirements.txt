@@ -30,3 +30,4 @@ tensorflow==1.11.*
 keras==2.2.*
 graphviz==0.10.*
 tqdm==4.31.*
+s3contents==0.1.12
