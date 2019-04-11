@@ -39,7 +39,7 @@
                     "type": "Git",
                     "git": {
                         "uri": "https://github.com/guimou/jupyter-notebooks-s3",
-                        "ref": "2.1.1"
+                        "ref": "master"
                     },
                     "contextDir": "scipy-notebook"
                 },
