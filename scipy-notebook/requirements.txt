@@ -23,3 +23,6 @@ vincent==0.4.*
 beautifulsoup4==4.6.*
 protobuf==3.*
 xlrd==1.2.*
+graphviz==0.10.*
+tqdm==4.31.*
+s3contents==0.1.12

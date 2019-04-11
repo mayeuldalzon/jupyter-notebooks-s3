@@ -9,8 +9,7 @@ RUN rm -rf /tmp/src/.git* && \
     chgrp -R 0 /tmp/src && \
     chmod -R g+w /tmp/src && \
     rm -rf /tmp/scripts && \
-    mv /tmp/src/.s2i/bin /tmp/scripts \
-    rpm -i http://rpmfind.net/linux/centos/6.10/os/x86_64/Packages/graphviz-2.26.0-10.el6.i686.rpm
+    mv /tmp/src/.s2i/bin /tmp/scripts
 
 ENV XDG_CACHE_HOME=/opt/app-root/src/.cache
 
