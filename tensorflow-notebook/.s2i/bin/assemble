@@ -31,6 +31,10 @@ cd $HOME
 
 rm -rf /tmp/facets
 
+# Install Graphviz
+
+yum install graphviz
+
 # Import matplotlib the first time to build the font cache.
 
 MPLBACKEND=Agg python -c "import matplotlib.pyplot"

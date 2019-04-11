@@ -38,7 +38,7 @@
                 "source": {
                     "type": "Git",
                     "git": {
-                        "uri": "https://github.com/jupyter-on-openshift/jupyter-notebooks",
+                        "uri": "https://github.com/guimou/jupyter-notebooks-s3",
                         "ref": "2.1.1"
                     },
                     "contextDir": "scipy-notebook"
