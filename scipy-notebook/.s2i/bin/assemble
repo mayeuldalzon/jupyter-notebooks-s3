@@ -35,6 +35,13 @@ rm -rf /tmp/facets
 
 MPLBACKEND=Agg python -c "import matplotlib.pyplot"
 
+# Install packages
+
+yum update -y
+yum install -y graphviz ffmpeg
+yum clean all
+rm -rf /var/cache/yum
+
 # Fix up permissions.
 
 fix-permissions /opt/app-root
