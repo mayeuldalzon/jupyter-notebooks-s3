@@ -14,6 +14,12 @@
             "spec": {
                 "lookupPolicy": {
                     "local": true
+                },
+                "resources": {
+                    "limits": {
+                        "memory": "1Gi",
+                        "cpu": "2000m"
+                    }
                 }
             }
         },
