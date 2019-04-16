@@ -26,7 +26,7 @@ xlrd==1.2.*
 graphviz==0.10.*
 tqdm==4.31.*
 s3contents==0.1.12
-opencv-python==4.1.*
+opencv-contrib-python-headless==4.1.*
 pydotplus==2.0.*
 resampy==0.2.*
 
