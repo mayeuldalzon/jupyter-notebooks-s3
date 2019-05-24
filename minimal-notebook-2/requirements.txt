@@ -8,3 +8,4 @@ distributed==1.26.0
 pandas==0.23.0
 mlflow==0.5.0
 tornado<6.0.0
+s3contents==0.1.12
