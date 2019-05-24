@@ -36,4 +36,4 @@ MPLBACKEND=Agg python -c "import matplotlib.pyplot"
 
 # Fix up permissions.
 
-fix-permissions /opt/app-root
+#fix-permissions /opt/app-root
