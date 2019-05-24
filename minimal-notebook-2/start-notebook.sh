@@ -7,6 +7,7 @@ set -eo pipefail
 JUPYTER_ENABLE_LAB=`echo "$JUPYTER_ENABLE_LAB" | tr '[A-Z]' '[a-z]'`
 
 if [[ ! -z "${JUPYTERHUB_API_TOKEN}" ]]; then
+    chmod +x /opt/app-root/bin/start-singleuser.sh
     exec /opt/app-root/bin/start-singleuser.sh "$@"
 else
     if [[ ! -z "${JUPYTER_ENABLE_KERNELGATEWAY}" ]]; then

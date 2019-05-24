@@ -5,6 +5,7 @@ set -x
 set -eo pipefail
 
 # Execute original assemble script.
+chmod +x /opt/app-root/builder/assemble
 
 /opt/app-root/builder/assemble
 
