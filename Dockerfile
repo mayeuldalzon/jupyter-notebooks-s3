@@ -1,4 +1,4 @@
-FROM /python-36
+FROM python-36
 
 USER root
 RUN yum -y install java-1.8.0-openjdk maven &&\
