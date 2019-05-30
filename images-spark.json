@@ -47,7 +47,7 @@
                   "sourceStrategy": {
                       "from": {
                           "kind": "DockerImage",
-                          "name": "quay.io/vpavlin/python36-spark-ubi7:latest"
+                          "name": "docker-registry-default.svd-pca.svc.ulaval.ca:443/jupyter3/openshift-spark-inc@sha256:9500d65cc6e873ef6ee7a1d93fe9e4d8d80e0dd97816052e39a23e02d21b1da1"
                       }
                   }
               },
