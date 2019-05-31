@@ -20,6 +20,14 @@ FROM centos/python-36-centos7:latest
 
 USER root
 
+COPY . /tmp/src
+
+RUN rm -rf /tmp/src/.git* && \
+    chown -R 1001 /tmp/src && \
+    chgrp -R 0 /tmp/src && \
+    chmod -R g+w /tmp/src && \
+    rm -rf /tmp/scripts && \
+    mv /tmp/src/.s2i/bin /tmp/scripts
 
 # Install required RPMs and ensure that the packages were installed
 RUN yum install -y java-1.8.0-openjdk wget numpy \
@@ -83,3 +91,10 @@ WORKDIR /tmp
 ENTRYPOINT ["/entrypoint"]
 
 CMD ["/launch.sh"]
+
+
+USER 1001
+
+RUN /tmp/scripts/assemble
+
+CMD [ "/opt/app-root/builder/run" ]
