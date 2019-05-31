@@ -62,9 +62,6 @@ RUN [ "bash", "-x", "/tmp/scripts/spark/install" ]
 USER root
 RUN [ "bash", "-x", "/tmp/scripts/s2i/install" ]
 
-USER root
-RUN rm -rf /tmp/artifacts
-
 USER 1001
 
 RUN /tmp/scripts/assemble
