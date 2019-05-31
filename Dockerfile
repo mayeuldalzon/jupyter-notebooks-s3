@@ -16,7 +16,7 @@
 #
 # This is a Dockerfile for the radanalyticsio/openshift-spark:2.4-latest image.
 
-FROM centos:latest
+FROM centos/python-36-centos7:latest
 
 USER root
 
