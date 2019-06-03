@@ -11,8 +11,6 @@ RUN rm -rf /tmp/src/.git* && \
     rm -rf /tmp/scripts && \
     mv /tmp/src/.s2i/bin /tmp/scripts
 	
-
-
 USER 1001
 
 RUN /tmp/scripts/assemble
