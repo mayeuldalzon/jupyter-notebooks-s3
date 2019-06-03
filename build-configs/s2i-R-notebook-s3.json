@@ -6,9 +6,9 @@
             "kind": "ImageStream",
             "apiVersion": "image.openshift.io/v1",
             "metadata": {
-                "name": "s2i-R-notebook-s3",
+                "name": "s2i-r-notebook-s3",
                 "labels": {
-                    "build": "s2i-R-notebook-s3"
+                    "build": "s2i-r-notebook-s3"
                 }
             },
             "spec": {
@@ -27,9 +27,9 @@
             "kind": "BuildConfig",
             "apiVersion": "build.openshift.io/v1",
             "metadata": {
-                "name": "s2i-R-notebook-py36-s3",
+                "name": "s2i-r-notebook-py36-s3",
                 "labels": {
-                    "build": "s2i-R-notebook-s3"
+                    "build": "s2i-r-notebook-s3"
                 }
             },
             "spec": {
@@ -47,7 +47,7 @@
                         "uri": "https://github.com/guimou/jupyter-notebooks-s3",
                         "ref": "master"
                     },
-                    "contextDir": "R-notebook"
+                    "contextDir": "r-notebook"
                 },
                 "strategy": {
                     "type": "Docker",
@@ -62,7 +62,7 @@
                 "output": {
                     "to": {
                         "kind": "ImageStreamTag",
-                        "name": "s2i-R-notebook-s3:3.6"
+                        "name": "s2i-r-notebook-s3:3.6"
                     }
                 },
                 "resources": {
