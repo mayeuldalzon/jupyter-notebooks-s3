@@ -15,7 +15,7 @@ ENV XDG_CACHE_HOME=/opt/app-root/src/.cache
 
 RUN cat <<- EOF > /etc/yum.repos.d/CentOS-Base.repo 
 
-[base]
+"[base]
 name=CentOS-$releasever - Base
 mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os&infra=$infra
 #baseurl=http://mirror.centos.org/centos/$releasever/os/$basearch/
@@ -45,13 +45,13 @@ mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo
 #baseurl=http://mirror.centos.org/centos/$releasever/centosplus/$basearch/
 gpgcheck=1
 enabled=0
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7"
 EOF
 
 
 RUN cat <<- EOF > /etc/yum.repos.d/epel.repo 
 
-[epel]
+"[epel]
 name=Extra Packages for Enterprise Linux 7 - $basearch
 #baseurl=http://download.fedoraproject.org/pub/epel/7/$basearch
 metalink=https://mirrors.fedoraproject.org/metalink?repo=epel-7&arch=$basearch
@@ -76,7 +76,7 @@ metalink=https://mirrors.fedoraproject.org/metalink?repo=epel-source-7&arch=$bas
 failovermethod=priority
 enabled=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
-gpgcheck=1
+gpgcheck=1"
 EOF
 
 
