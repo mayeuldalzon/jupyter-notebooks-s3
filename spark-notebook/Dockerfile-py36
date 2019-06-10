@@ -15,6 +15,8 @@ ENV XDG_CACHE_HOME=/opt/app-root/src/.cache
 
 RUN yum repolist
 
+RUN yum-config-manager --enable Base
+
 # Install required RPMs and ensure that the packages were installed
 RUN yum install -y java-1.8.0-openjdk wget numpy \
     && yum clean all && rm -rf /var/cache/yum \
