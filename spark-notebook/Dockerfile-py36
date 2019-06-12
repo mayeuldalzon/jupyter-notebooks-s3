@@ -13,8 +13,6 @@ RUN rm -rf /tmp/src/.git* && \
 
 ENV XDG_CACHE_HOME=/opt/app-root/src/.cache
 
-RUN rpm -q subscription-manager
-
 # Install required RPMs and ensure that the packages were installed
 RUN yum install -y java-1.8.0-openjdk wget numpy \
     && yum clean all && rm -rf /var/cache/yum \
