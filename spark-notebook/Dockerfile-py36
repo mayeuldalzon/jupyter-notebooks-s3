@@ -13,7 +13,7 @@ RUN rm -rf /tmp/src/.git* && \
 
 ENV XDG_CACHE_HOME=/opt/app-root/src/.cache
 
-RUN yum-config-manager --enable ULAVAL_EPEL7_EPEL7 kubernetes/signature kubernetes/signature rhel-7-server-extras-rpms rhel-7-server-optional-rpms rhel-7-server-rpms rhel-7-server-satellite-tools-6.4-rpms 
+RUN rpm -q subscription-manager
 
 # Install required RPMs and ensure that the packages were installed
 RUN yum install -y java-1.8.0-openjdk wget numpy \
