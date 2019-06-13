@@ -35,7 +35,6 @@ RUN /opt/app-root/src/miniconda3/bin/conda install --quiet --yes \
     'r-plyr=1.8*' \
     'r-devtools=2.0*' \
     'r-tidyverse=1.2*' \
-    'r-forecast=8.7*' \
     'r-rsqlite=2.1*' \
     'r-reshape2=1.4*' \
     'r-nycflights13=1.0*' \
