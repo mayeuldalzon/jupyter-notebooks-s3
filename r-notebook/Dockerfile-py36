@@ -19,6 +19,8 @@ RUN chmod +x Miniconda3-latest-Linux-x86_64.sh && ./Miniconda3-latest-Linux-x86_
 
 RUN export PATH="$PATH:/opt/app-root/src/miniconda3/bin"
 
+RUN yum install libXrender
+
 RUN /opt/app-root/src/miniconda3/bin/conda install -y -c r \
      r-shiny \
      r-markdown \
