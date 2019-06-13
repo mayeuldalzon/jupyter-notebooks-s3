@@ -17,6 +17,10 @@ RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
 RUN chmod +x Miniconda3-latest-Linux-x86_64.sh && ./Miniconda3-latest-Linux-x86_64.sh -b
 
+RUN /opt/app-root/src/miniconda3/bin/conda config --add channels conda-forge
+
+RUN /opt/app-root/src/miniconda3/bin/conda install -y -c r conda-forge r-forecast
+
 RUN /opt/app-root/src/miniconda3/bin/conda install -y -c r \
      r-shiny \
      r-markdown \
@@ -47,8 +51,7 @@ RUN /opt/app-root/src/miniconda3/bin/conda install --quiet --yes \
     'r-hexbin=1.27*' && \
     /opt/app-root/src/miniconda3/bin/conda clean --all -f -y && \
     fix-permissions $CONDA_DIR
-    
-RUN /opt/app-root/src/miniconda3/bin/conda install -y -c r conda-forge r-forecast
+   
 	
 USER 1001
 
