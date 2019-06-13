@@ -11,7 +11,7 @@ RUN rm -rf /tmp/src/.git* && \
     rm -rf /tmp/scripts && \
     mv /tmp/src/.s2i/bin /tmp/scripts
     
-RUN yum install libXrender
+RUN yum install -y libXrender
     
 USER 1001
 
