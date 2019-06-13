@@ -23,7 +23,7 @@ RUN echo "IRkernel::installspec()" > /tmp/install.r && /opt/app-root/src/minicon
 
 ENV XDG_CACHE_HOME=/opt/app-root/src/.cache
 
-RUN conda install --quiet --yes \
+RUN /opt/app-root/src/miniconda3/bin/conda install --quiet --yes \
     'r-base=3.5.1' \
     'r-rodbc=1.3*' \
     'unixodbc=2.3.*' \
