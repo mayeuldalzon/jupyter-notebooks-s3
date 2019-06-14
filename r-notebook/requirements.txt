@@ -29,4 +29,4 @@ s3contents==0.1.12
 opencv-python==4.1.*
 pydotplus==2.0.*
 resampy==0.2.*
-jupyter-rsession-proxy==1.*
+jupyter-rsession-proxy==1.0b6
