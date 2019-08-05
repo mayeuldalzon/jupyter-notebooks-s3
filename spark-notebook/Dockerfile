@@ -1,4 +1,4 @@
-FROM quay.io/jupyteronopenshift/s2i-minimal-notebook-py36:master
+FROM docker-registry-default.pca.at.valeria.science:443/val-jupyterhub/s2i-minimal-notebook-s3:3.6
 
 USER root
 
